@@ -1,12 +1,22 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) 
+int main()
 {
-    char str[5];
-    
-    while(fgets(str, sizeof(str), stdin)){
-        printf("%s", str);
-    }
+	int array[10] = { 4, 2, 5, -1, 21, 3, -6, 12, -9, 6 };
+	int i;
 
-    return 0;
+	for (i = 0; i < 10; i++) {
+		if (array[i] < 0 && array[-array[i] - 1] >= 0) {
+			printf("%2d\n", array[-array[i] - 1], -array[i]);
+		}
+
+		if (array[i] < 0 && array[-array[i] - 1] < 0) {
+			printf("%2d\n", array[-array[i]], -array[i]);
+		}
+
+		
+	}
+	printf("\n");
+
+	return 0;
 }
