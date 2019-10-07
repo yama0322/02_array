@@ -7,7 +7,8 @@ int main()
 
 	for (j = 0; j < 10; j++) {
 		printf("array[%d]=", j);
-		scanf_s("%d", &array[j]);
+		scanf("%d", &array[j]);
+		printf("\n");
 	}
 
 	for (i = 0; i < 10; i++) {
