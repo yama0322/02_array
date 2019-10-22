@@ -1,22 +1,21 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char *argv[]) 
 {
-	int array[10];
-	int i;
-	
-	for (i = 0; i < 10; i++) {
-		if (array[i] < 0 && array[-array[i] - 1] >= 0) {
-			printf("%2d\n", array[-array[i] - 1]);
+    int str[5];
+    int i;
+    
+    while(fgets(str, sizeof(str), stdin)){
+	    
+        if (atr[i] < 0 && str[-str[i] - 1] >= 0) {
+			printf("%d\n", str[-str[i] - 1]);
 		}
 
-		if (array[i] < 0 && array[-array[i] - 1] < 0) {
-			printf("%2d\n", array[-array[i]]);
+		if (str[i] < 0 && str[-str[i] - 1] < 0) {
+			printf("%d\n", str[-str[i]]);
 		}
+	    
+    }
 
-		
-	}
-	printf("\n");
-
-	return 0;
+    return 0;
 }
