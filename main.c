@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin)){
 	    
+	i=0;
+	    
         if (atr[i] < 0 && str[-str[i] - 1] >= 0) {
 			printf("%d\n", str[-str[i] - 1]);
 		}
